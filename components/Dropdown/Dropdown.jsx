@@ -12,7 +12,6 @@ const Dropdown = () => {
   }
 
   const onSelectedItem = (item) => {
-    console.log('🚀 ~ item:', item)
     setSelectedItem(item)
     setIsOpen(false)
   }
