@@ -8,7 +8,36 @@
   flex-direction: column;
   gap: 5px;
 
+  position: relative;
+
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dropdownList::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  top: -10px;
+  left: 50px;
+
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+  z-index: -1;
+}
+
+.dropdownList::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  top: -9px;
+  left: 50px;
+
+  background-color: white;
 }
